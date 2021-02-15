@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher, onDestroy, onMount } from "svelte";
-  import { Grid } from "ag-grid-enterprise";
+  import { Grid } from "ag-grid-community";
   import "ag-grid-enterprise/dist/styles/ag-grid.css";
   import "ag-grid-enterprise/dist/styles/ag-theme-alpine.css";
 
