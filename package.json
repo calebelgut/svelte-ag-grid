@@ -10,7 +10,8 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "ag-grid-community": "^24.0.0"
+    "ag-grid-community": "^24.0.0",
+    "ag-grid-enterprise": "^25.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.1.0",

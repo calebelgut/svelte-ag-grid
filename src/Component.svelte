@@ -1,8 +1,8 @@
 <script>
   import { createEventDispatcher, onDestroy, onMount } from "svelte";
-  import { Grid } from "ag-grid-community";
-  import "ag-grid-community/dist/styles/ag-grid.css";
-  import "ag-grid-community/dist/styles/ag-theme-alpine.css";
+  import { Grid } from "ag-grid-enterprise";
+  import "ag-grid-enterprise/dist/styles/ag-grid.css";
+  import "ag-grid-enterprise/dist/styles/ag-theme-alpine.css";
 
   const dispatch = createEventDispatcher();
 
@@ -19,7 +19,7 @@
   };
   export let loading = false;
 
-  let themeUrl = `https://unpkg.com/ag-grid-community/dist/styles/ag-theme-${theme}.css`;
+  let themeUrl = `https://unpkg.com/ag-grid-enterprise/dist/styles/ag-theme-${theme}.css`;
   let ref;
   let grid;
   let api;
@@ -70,6 +70,34 @@
   .container {
     width: 100%;
     height: var(--grid-height, 800px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
   }
 </style>
 
